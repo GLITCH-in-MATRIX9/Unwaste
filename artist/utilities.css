@@ -1,0 +1,53 @@
+.container-lg{
+    padding-inline: 1rem;
+}
+
+.container-med{
+    padding-inline: 3rem;
+}
+
+.container-sm{
+    padding-inline: clamp(1rem, 5vw, 10rem);
+    max-width: 1800px;
+}
+
+.container-full-width{
+    width: 100%;
+}
+
+.section-padding-xs{
+    padding-block: 0.25em
+}
+
+.section-padding-sm{
+    padding-block: 1rem
+}
+
+.section-padding-med{
+    padding-block: 2rem;
+}
+
+.section-padding-lg{
+    padding-block: 3rem;
+}
+.section-padding-xl{
+    padding-block: 4rem;
+}
+
+.primary-heading{
+    font-size: var(--fs-heading);
+    font-weight: var(--fw-heading);
+    line-height: 100%
+}
+
+.secondary-heading{
+    font-size: var(--fs-subheading);
+    font-weight: var(--fw-subheading);
+    line-height: 120%;
+}
+
+.tertiary-heading{
+    margin-top: 0.25rem;
+    font-size: var(--fs-tert-heading);
+    font-weight: var(--fw-tert-heading);
+}

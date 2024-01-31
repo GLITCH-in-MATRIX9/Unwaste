@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #141414;
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .modal {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #c9ef73;
+        }
+
+        .modal-content {
+            background-color: #c9ef73;
+            max-width: 300px;
+            width: 100%;
+            padding: 20px;
+            border-radius: 8px;
+            position: relative;
+        }
+
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 40px;
+            cursor: pointer;
+            color: black;
+        }
+
+        .form-container {
+            text-align: center;
+        }
+
+        .form-title {
+            color: black;
+            margin-bottom: 20px;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 8px;
+            color: black;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 3px solid black;
+            border-radius: 3px;
+            box-sizing: border-box;
+            background-color: #c9ef73;
+            color: black;
+        }
+
+        .form-button {
+            width: 100%;
+            padding: 12px;
+            background-color: #000000;
+            color: #c9ef73;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in;
+        }
+
+        .form-button:hover {
+            background-color: #333;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+
+        }
+
+        .text-content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+
+            color: #c9ef73;
+        }
+
+        .text-content h1 {
+            font-family: serif;
+            font-size: 6em;
+            margin: -20px;
+        }
+        @media screen and (max-width: 600px) {
+            .text-content{
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="text-content">
+            <h1>UNWASTE</h1>
+            <p>Transforming Waste, Creating Art.</p>
+        </div>
+        <div id="signup-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeSignUpModal()">&times;</span>
+                <form id="signup-form" class="form-container" onsubmit="return validateForm()">
+                    <h2 class="form-title">Sign-up Form</h2>
+
+                    <input placeholder="Enter Username" type="text" id="signup-username" name="signup-username"
+                        class="form-input" required>
+
+
+                    <input placeholder="Enter Password" type="password" id="signup-password" name="signup-password"
+                        class="form-input" required>
+
+
+                    <input placeholder="Re-Enter Password" type="password" id="confirm-password" name="confirm-password"
+                        class="form-input" required>
+
+                    <button onclick="" type="submit" class="form-button">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="/script.js"></script>
+</body>
+
+</html>

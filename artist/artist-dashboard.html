@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artist Dashboard</title>
+    <link rel="stylesheet" href="utilities.css">
+    <link rel="stylesheet" href="dashboard-style.css">
+    <script src="https://kit.fontawesome.com/6b6441b6bf.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="menu-toggle">
+        <i class="fa-solid fa-bars menu-toggle-icon" id="hamburger-icon"></i>
+    </div>
+    <aside class="container-med  section-padding-sm side-nav" id="side-nav">
+        <h2 class="primary-heading section-padding-med" id="logo">
+            U<span>nwaste</span>
+        </h2>
+        <ul class="nav-list">
+            <li class="dark-container nav-item active">
+                <a href="/site/mainpage.html">
+                    <div class="icon-container">
+                        <i class="fa-solid fa-house"></i>
+                    </div>
+                    <span>Home</span>
+                </a>
+                
+            </li>
+            <li class="dark-container nav-item inactive">
+                <a href="#">
+                    <div class="icon-container">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <span>Profile</span>
+                </a>
+                
+            </li>
+            <li class="dark-container nav-item inactive">
+                <a href="#">
+                    <div class="icon-container">
+                        <i class="fa-solid fa-paintbrush"></i>
+                    </div>
+                    <span>Artwork</span>
+                </a>
+                
+            </li>
+            <li class="dark-container nav-item inactive">
+                <a href="/pictures/UNWASTE_-_Rules_and_Guidelines.pdf">
+                    <div class="icon-container">
+                        <i class="fa-solid fa-file"></i>
+                    </div>
+                    <span>Rules</span>
+                </a>
+                
+            </li>
+            <li class="dark-container nav-item inactive" id="logout-cta">
+                <a href="/index.html">
+                    <div class="icon-container">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                    </div>
+                    <span>Logout</span>
+                </a>
+                
+            </li>
+        </ul>
+    </aside>
+
+    
+    <main class="main-container section-padding-med" id="dashboard">
+        <input class="dark-container input-field" id="search-box" placeholder="Search for products, waste etc.">
+        <div class="light-cotnainer api-container"></div>
+        <ul class="menu">
+            <li class="menu-item dark-container active">All</li>
+            <li class="menu-item dark-container inactive">Sold</li>
+            <li class="menu-item dark-container inactive">Recent</li>
+        </ul>
+
+        <div class="card-container">
+            <div class="blank-card">
+                <button class="add-item-btn">+</button>
+            </div>
+            <div class="card">
+                <div class="card-img-container">
+                    <img class="item-img" src="assets/images/Black Gold Resin.jpg" alt="">
+                </div>
+                <h6 class="item-type">Product</h6>
+                <p class="item-name">Black Gold Resin</p>
+                <h2 class="item-price">Rs. 999</h2>
+            </div>
+            <div class="card">
+                <div class="card-img-container">
+                    <img class="item-img" src="assets/images/Peach Gold Resin.jpg" alt="">
+                </div>
+                <h6 class="item-type">Product</h6>
+                <p class="item-name">Peach Gold Resin</p>
+                <h2 class="item-price">Rs. 999</h2>
+            </div>
+            <div class="card">
+                <div class="card-img-container">
+                    <img class="item-img" src="assets/images/Aqua Resin.jpg" alt="">
+                </div>
+                <h6 class="item-type">Product</h6>
+                <p class="item-name">Aqua Resin</p>
+                <h2 class="item-price">Rs. 799</h2>
+            </div>
+            <div class="card">
+                <div class="card-img-container">
+                    <img class="item-img" src="assets/images/Orange Blue Resin.jpg" alt="">
+                </div>
+                <h6 class="item-type">Product</h6>
+                <p class="item-name">Orange Blue Resin</p>
+                <h2 class="item-price">Rs. 899</h2>
+            </div>
+        </div>
+    </main>
+   
+    <aside class="container-lg section-padding-med" id="side-profile">
+        <div class="user-notification">
+            <div class="profile-pic-container"></div>
+            <i class="fa-solid fa-bell"></i>
+        </div>
+        <div class="balance-container light-container section-padding-sm container-lg">
+            <p>Total Balance</p>
+            <h3 class="secondary-heading" id="artist-balance">Rs. 1,000</h3>
+            <button id="balance-button">See details</button>
+        </div>
+        <div class="transactions-container light-container section-padding-sm container-lg">
+            <p>Recent Transactions</p>
+            <ul class="transactions-list">
+                <li class="transaction positive-transaction dark-container"><span class="positive">+</span>Rs. 500</li>
+                <li class="transaction positive-transaction dark-container"><span class="positive">+</span>Rs. 200</li>
+                <li class="transaction negative-transaction dark-container"><span class="negative">&ndash;</span>Rs. 400</li>
+            </ul>
+            <button id="transactions-button">See details</button>
+        </div>
+    </aside> 
+    
+    <script src="dashboard-script.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="shopping.css">
+    <title>Creations Shop</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>UNWASTE<br><span>Transforming Waste; Creating Art</span></br></h1>
+        </div>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <img class="menu" src="https://img.icons8.com/clouds/100/menu.png" alt="Menu Icon">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/site/mainpage.html">Home</a></li>
+                <li><a href="/shop/shop.html">Features</a></li>
+                <li><a href="/site/mainpage.html">Testimonials</a></li>
+                <li><a href="#footer">Contact</a></li>
+                <li><a href="#" target="_blank">
+                        <img class="cart" src="https://img.icons8.com/ios/50/FFFFFF/shopping-bag--v1.png" alt="cart">
+                        <span class="cart-count">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="filters">
+        <h2>Filters</h2>
+        <label>
+
+            <select class="categoryFilter" id="categoryFilter">
+                <option value="all">All</option>
+                <option value="flooring">Flooring</option>
+                <option value="stationary">Stationary</option>
+                <option value="wall">Wall Hangings</option>
+                <option value="accessories">Accessories</option>
+                <option value="tables">Tables</option>
+
+            </select>
+        </label>
+    </section>
+
+    <section class="product-container" id="productContainer">
+
+    </section>
+
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>About Us</h2>
+                <p>We, the passionate team behind UNWASTE, have a vision that extends beyond art. With creativity at our
+                    core, we give discarded materials a second life, fostering a community that celebrates
+                    sustainability and innovation. Join us on this transformative journey </p>
+
+            </div>
+
+            <div class="footer-section links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="/site/mainpage.html">Home</a></li>
+                    <li><a href="/shop/shop.html">Shop</a></li>
+                    <li><a href="/site/progress.html">Artists</a></li>
+                    <li><a href="#contact">Contact</a></li>
+
+
+                </ul>
+            </div>
+
+            <div class="footer-section contact">
+                <h2>Contact Us</h2>
+                <p>Email: unwaste@gmail.com</p>
+                <p>Phone: +8130035736</p>
+            </div>
+
+            <div class="footer-section social">
+                <h2>Follow Us</h2>
+                <div class="social-icons">
+                    <a href="#" target="_blank"><img src="https://img.icons8.com/ios-filled/50/facebook-new.png"
+                            alt="Facebook"></a>
+                    <a href="#" target="_blank"><img src="https://img.icons8.com/ios/50/twitterx--v2.png"
+                            alt="Twitter"></a>
+                    <a href="#" target="_blank"><img src="https://img.icons8.com/ios/50/instagram-new--v3.png"
+                            alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 UNWASTE. All rights reserved. | Designed by Anjali Dass</p>
+        </div>
+    </footer>
+
+    <script src="shopping.js"></script>
+</body>
+
+</html>

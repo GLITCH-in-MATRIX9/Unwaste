@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&display=swap');
+
+:root {
+    --primary-color: #c9ef73;
+    --background-color: #141414;
+    --text-color: white;
+    --button-background: var(--primary-color);
+    --button-text-color: black;
+    --button-hover-transform: scale(1.09);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    height: 100vh;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+}
+
+/* Heading Section */
+.heading {
+    flex: 1;
+    font-size: 2em;
+    font-family: serif;
+    color: var(--text-color);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+span {
+    color: var(--primary-color);
+}
+
+/* 2nd Part - Main Container */
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+/* Left and Right Sections */
+.left,
+.right {
+    width: 50%;
+    padding: 50px;
+}
+
+/* Left Section Styling */
+.left {
+    color: var(--text-color);
+    background-color: none;
+    text-align: center;
+}
+
+/* Right Section Styling */
+.right {
+    color: var(--text-color);
+    background-color: none;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+/* Button Styling */
+button {
+    border: none;
+    border-radius: 30px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: var(--button-background);
+    color: var(--button-text-color);
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Artist and Customer Button Styling */
+.artist-button,
+.customer-button {
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: var(--button-background);
+    color: var(--button-text-color);
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Hover Effect on Buttons */
+.artist-button:hover,
+.customer-button:hover {
+    transform: var(--button-hover-transform);
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Circular Animation */
+svg {
+    width: 300px;
+    height: 3%;
+    animation: rotate infinite 5s ease-in-out;
+    transform: translateX(-200px);
+}
+
+/* Text Styling within Circular Animation */
+text {
+    font-family: serif;
+    fill: var(--text-color);
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+path {
+    stroke: none;
+    fill: none;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Image Container */
+.container {
+    position: relative;
+}
+
+/* Random Images Styling */
+.random-image {
+    position: absolute;
+    width: 300px;
+    height: auto;
+    z-index: -1;
+}
+
+.random-image:nth-child(1) {
+    top: 10%;
+    left: 5%;
+}
+
+.random-image:nth-child(2) {
+    top: 60%;
+    left: 25%;
+}
+
+.random-image:nth-child(3) {
+    width: 200px;
+    top: 10%;
+    right: 5%;
+}
+
+.random-image:nth-child(4) {
+    width: 250px;
+    top: 20%;
+    right: 40%;
+}
+
+.random-image:nth-child(5) {
+    width: 300px;
+    top: 50%;
+    right: 19%;
+}
+
+/* Collector Link Styling */
+.collector-link a {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect on Collector Link */
+.collector-link a:hover {
+    color: #a4e212;
+    transform: var(--button-hover-transform);
+}
+
+/* Responsive Styles */
+
+/* Media Query for Tablets */
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+        padding: 0px 0px 20px 0px  ;
+    }
+
+    .random-image:nth-child(3),
+    .random-image:nth-child(4),
+    .random-image:nth-child(5) {
+        width: 100%;
+        top: 10%;
+        right: 0%;
+    }
+
+    text {
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+}
+
+
+/* Media Query for Mobile Phones */
+@media only screen and (max-width: 480px) {
+
+
+    .container {
+        flex-direction: column;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+    }
+
+    .random-image:nth-child(3),
+    .random-image:nth-child(4),
+    .random-image:nth-child(5) {
+        width: 100%;
+        top: 10%;
+        right: 0%;
+    }
+
+    text {
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+
+    .heading {
+        font-size: 1.2em;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .random-image {
+        display: none;
+    }
+
+}
+
+
+
+
+
