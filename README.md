@@ -6,11 +6,11 @@ At our Waste to Art initiative, we are dedicated to transforming the narrative a
 
 
 
-# Deployed website:
+### Deployed website:
 
 https://un-waste.netlify.app/
 
-# PREVIEW
+### PREVIEW
 
 ![Screenshot (26)](https://github.com/GLITCH-in-MATRIX9/Unwaste/assets/98489478/5ba09cb1-380b-4b87-ae81-b04c11b18085)
 ![Screenshot (27)](https://github.com/GLITCH-in-MATRIX9/Unwaste/assets/98489478/8e26eeb9-5612-4956-a769-7968de53a2f1)
