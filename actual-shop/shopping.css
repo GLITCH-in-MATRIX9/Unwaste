@@ -6,32 +6,20 @@ body {
     font-family: Arial, sans-serif;
 }
 
-
-header {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: #141414;
-    padding: 10px 10px;
+/* Header */
+.container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  
+    padding: 20px;
 }
 
-header h1 {
-    font-family: serif;
-    color: #c9ef73;
-}
-
-header span {
-    font-size: 10px;
-}
-
-nav {
-    text-align: center;
+.logo img {
+    width: 50px; /* Adjust the width as needed */
 }
 
 nav ul {
-    list-style: none;
+    list-style-type: none;
     margin: 0;
     padding: 0;
 }
@@ -43,17 +31,21 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 16px;
-}
-nav a:hover{
-    color: #c9ef73;
+    color: black;
 }
 
+.profile img {
+    width: 40px; /* Adjust the width as needed */
+    height: 40px;
+    border-radius: 50%;
+}
+
+
+/* header end */
+
 .filters {
-    background-color: #141414;
-    padding: 15px;
+    background-color: white;
+    padding: 0px 20px;
 }
 
 .filters h2 {
@@ -75,15 +67,19 @@ nav a:hover{
 .categoryFilter {
 
     border: none;
-    background-color: rgb(0, 0, 0);
+    background-color: #c9ef73;
     width: 200px;
     padding: 10px;
     border-radius: 2px;
     font-size: 1em;
-    color: #5f5f5f;
+    color: black;
+    border-radius: 20px;
 }
 .cart {
     width: 20px;
+}
+.price {
+    color: black;
 }
 
 
@@ -93,7 +89,7 @@ nav a:hover{
 
 .product-container {
     color: white;
-    background-color: #141414;
+    background-color: white;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -101,12 +97,11 @@ nav a:hover{
 }
 
 .product-card {
-    background-color: #101010;
     border:none;
     border-radius: 10px;
     margin: 20px;
     padding: 30px;
-    max-width: 200px;
+    width: 200px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -122,7 +117,8 @@ nav a:hover{
    
 }
 h3{
-    color: rgb(254, 243, 243);
+    color: black;
+    font-weight: 20%;
     font-family: 'Poppins', sans-serif;
   
 }
@@ -148,7 +144,7 @@ h3{
 }
 
 .cart-button:hover {
-    background-color: #e4f8b7; 
+    background-color: greenyellow;
 }
 
 .cart-icon {
@@ -162,7 +158,6 @@ h3{
 footer {
     text-align: center;
     padding: 20px 0;
-    background-color: #333;
     color: white;
 }
 

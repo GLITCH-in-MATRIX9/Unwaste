@@ -10,26 +10,36 @@
 
 <body>
     <header>
-        <div class="logo">
-            <h1>UNWASTE<br><span>Transforming Waste; Creating Art</span></br></h1>
+        <div class="container">
+            <!-- Logo on the left corner -->
+            <div class="logo">
+                <a href="#"><img src="/pictures/logo.png" alt="Logo"></a>
+            </div>
+            <!-- Header links in the middle -->
+            <nav>
+                <ul>
+                    <li><a href="/waste_collection/Waste.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="/shop/shop.html">Shop</a></li>
+                </ul>
+            </nav>
+            <!-- Cart item -->
+            <div class="cart">
+                <a href="#" target="_blank">
+                    <span class="cart-count">0</span>
+                    <img src="https://img.icons8.com/ios-glyphs/30/shopping-cart--v1.png" alt="Cart">
+
+                </a>
+            </div>
+            <!-- Image on the right corner for profile pic -->
+            <div class="profile">
+                <img src="/pictures/image 1.png" alt="Profile Pic">
+            </div>
         </div>
-        <div class="menu-toggle" onclick="toggleMenu()">
-            <img class="menu" src="https://img.icons8.com/clouds/100/menu.png" alt="Menu Icon">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="/site/mainpage.html">Home</a></li>
-                <li><a href="/shop/shop.html">Features</a></li>
-                <li><a href="/site/mainpage.html">Testimonials</a></li>
-                <li><a href="#footer">Contact</a></li>
-                <li><a href="#" target="_blank">
-                        <img class="cart" src="https://img.icons8.com/ios/50/FFFFFF/shopping-bag--v1.png" alt="cart">
-                        <span class="cart-count">0</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
     </header>
+
 
     <section class="filters">
         <h2>Filters</h2>
