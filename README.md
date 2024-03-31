@@ -8,13 +8,21 @@ At our Waste to Art initiative, we are dedicated to transforming the narrative a
 
 ### Deployed website:
 
-https://un-waste.netlify.app/
+https://unwaste-official.netlify.app/
 
 ### PREVIEW
 
-![Screenshot (26)](https://github.com/GLITCH-in-MATRIX9/Unwaste/assets/98489478/5ba09cb1-380b-4b87-ae81-b04c11b18085)
-![Screenshot (27)](https://github.com/GLITCH-in-MATRIX9/Unwaste/assets/98489478/8e26eeb9-5612-4956-a769-7968de53a2f1)
-![Screenshot (28)](https://github.com/GLITCH-in-MATRIX9/Unwaste/assets/98489478/3aec8a26-0de0-4c58-8894-e36520cb69b8)
-![Screenshot (29)](https://github.com/GLITCH-in-MATRIX9/Unwaste/assets/98489478/95e4e1c8-1392-454c-aab3-2684e54c7cd1)
-![Screenshot (24)](https://github.com/GLITCH-in-MATRIX9/Unwaste/assets/98489478/cadbc128-2f4d-4555-995c-d6a73f28cf8f)
-![Screenshot (25)](https://github.com/GLITCH-in-MATRIX9/Unwaste/assets/98489478/86bcb4fa-6f83-4367-8db3-3b3efe226a1a)
+https://www.loom.com/share/9ff48dea7bc44dac86537f28bda9f263?sid=b82049a7-c511-4694-8905-bb018144c7fe
+![Frame 8 (5)](https://github.com/GLITCH-in-MATRIX9/Unwaste/assets/98489478/b241e461-8798-45c0-8276-fa01056a4ceb)
+![Frame 7](https://github.com/GLITCH-in-MATRIX9/Unwaste/assets/98489478/8c0bb6bf-cbd6-4b05-b272-b0727b02dc38)
+![Screenshot 2024-03-31 165305](https://github.com/GLITCH-in-MATRIX9/Unwaste/assets/98489478/8c1d7472-1b62-4e77-9483-ed4d26e713a6)
+![Screenshot 2024-03-31 170441](https://github.com/GLITCH-in-MATRIX9/Unwaste/assets/98489478/4c38216f-dfd4-435a-9996-82ea6e32b4ae)
+![Screenshot 2024-03-31 163158](https://github.com/GLITCH-in-MATRIX9/Unwaste/assets/98489478/11ad8472-69f7-43e7-baaf-eb72f6340efb)
+
+
+
+
+
+
+
+
