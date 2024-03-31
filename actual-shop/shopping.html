@@ -16,13 +16,13 @@
                 <a href="#"><img src="/pictures/logo.png" alt="Logo"></a>
             </div>
             <!-- Header links in the middle -->
-            <nav>
-                <ul>
-                    <li><a href="/waste_collection/Waste.html">Home</a></li>
+            <nav class="nav active">
+                <ul class="nav-links">
+                    <li><a href="/landing-page/Waste.html">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Contact</a></li>
-                    <li><a href="/shop/shop.html">Shop</a></li>
+                    <li><a href="/shop-landing/shop.html">Shop</a></li>
                 </ul>
             </nav>
             <!-- Cart item -->
@@ -35,7 +35,7 @@
             </div>
             <!-- Image on the right corner for profile pic -->
             <div class="profile">
-                <img src="/pictures/image 1.png" alt="Profile Pic">
+                <img id="profile-pic" src="/pictures/profile.jpg" alt="Profile Pic">
             </div>
         </div>
     </header>
@@ -43,18 +43,22 @@
 
     <section class="filters">
         <h2>Filters</h2>
-        <label>
+        <div class="labels">
+            <label>
+                <!-- Filter button -->
 
-            <select class="categoryFilter" id="categoryFilter">
-                <option value="all">All</option>
-                <option value="flooring">Flooring</option>
-                <option value="stationary">Stationary</option>
-                <option value="wall">Wall Hangings</option>
-                <option value="accessories">Accessories</option>
-                <option value="tables">Tables</option>
+                <select class="categoryFilter" id="categoryFilter">
 
-            </select>
-        </label>
+                    <option value="all">All</option>
+                    <option value="flooring">Flooring</option>
+                    <option value="stationary">Stationary</option>
+                    <option value="wall">Wall Hangings</option>
+                    <option value="accessories">Accessories</option>
+                    <option value="tables">Tables</option>
+
+                </select>
+            </label>
+        </div>
     </section>
 
     <section class="product-container" id="productContainer">
@@ -74,9 +78,8 @@
             <div class="footer-section links">
                 <h2>Quick Links</h2>
                 <ul>
-                    <li><a href="/site/mainpage.html">Home</a></li>
-                    <li><a href="/shop/shop.html">Shop</a></li>
-                    <li><a href="/site/progress.html">Artists</a></li>
+                    <li><a href="/landing-page/Waste.html">Home</a></li>
+                    <li><a href="/shop-landing/shop.html">Shop</a></li>
                     <li><a href="#contact">Contact</a></li>
 
 

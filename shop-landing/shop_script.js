@@ -1,39 +1,31 @@
-//toggle menu
-function toggleMenu() {
-  var nav = document.querySelector("nav");
-  nav.classList.toggle("active");
-}
+const sr = ScrollReveal({
+  origin: "left",
+  distance: "50px",
+  duration: 2000,
+  reset: true,
+});
 
-var swiper = new Swiper(".slide-container", {
-    slidesPerView: 4,
-    spaceBetween: 20,
-    sliderPerGroup: 4,
-    loop: true,
-    centerSlide: "true",
-    fade: "true",
-    grabCursor: "true",
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-      dynamicBullets: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  
-    breakpoints: {
-      0: {
-        slidesPerView: 1,
-      },
-      520: {
-        slidesPerView: 2,
-      },
-      768: {
-        slidesPerView: 3,
-      },
-      1000: {
-        slidesPerView: 4,
-      },
-    },
-  });
+sr.reveal("[data-scroll]");
+
+window.addEventListener("resize", function () {
+  if (window.innerWidth <= 640) {
+    document
+      .getElementById("profile-pic")
+      .addEventListener("click", function () {
+        var navLinks = document.querySelector(".nav-links");
+        navLinks.style.display =
+          navLinks.style.display === "none" ? "block" : "none";
+      });
+  } else {
+    // Remove the event listener if screen width is greater than 640 pixels
+    document
+      .getElementById("profile-pic")
+      .removeEventListener("click", toggleNav);
+  }
+});
+
+// Define the toggleNav function outside of the resize event listener
+function toggleNav() {
+  var navLinks = document.querySelector(".nav-links");
+  navLinks.style.display = navLinks.style.display === "none" ? "block" : "none";
+}

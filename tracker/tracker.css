@@ -1,1 +1,398 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
 
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo img {
+  width: 50px;
+}
+.text-container {
+  display: flex;
+  justify-content: center;
+  font-size: large;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.nav-links {
+  list-style-type: none;
+}
+@media screen and (max-width: 640px) {
+  nav {
+    z-index: 100;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  nav li {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  nav {
+    flex-direction: column;
+    width: 100%;
+    background-color: #8bd037;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    z-index: 1;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  li {
+    margin: 10px 0;
+  }
+}
+
+/* right and left sections start */
+
+.container2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 20px;
+}
+
+.left-section {
+  flex: 0 1 60%;
+  padding: 20px;
+}
+
+.right-section {
+  z-index: 2;
+  flex: 0 1 30%;
+}
+
+.left-section h2 {
+  font-weight: bold;
+  font-size: 4.5em;
+  margin-bottom: 10px;
+  color: black;
+}
+span {
+  text-decoration: dashed;
+  color: rgb(7, 115, 255);
+}
+
+.left-section p {
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 40px;
+  background-color: #c9fe73;
+  color: black;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+  margin-right: 10px;
+  transform: scale(1);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  background-color: greenyellow;
+}
+.btn.scale-animation {
+  animation: scaleInOut 0.2s infinite alternate;
+}
+
+@keyframes scaleInOut {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.right-section img {
+  margin-top: 20px;
+  margin-left: 50px;
+  padding: 10px 0px;
+  width: 200px;
+  height: auto;
+}
+.right-section2 img {
+  margin-left: 50px;
+  padding: 10px 0px;
+  width: 500px;
+  height: auto;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+/* right and left sections end */
+
+/* newsletter */
+.newsletter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.newsletter {
+  position: relative;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 80px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  overflow: hidden;
+}
+.newsletter::before,
+.newsletter::after {
+  content: "";
+  position: absolute;
+  background-color: #60920f;
+}
+
+.newsletter h2 {
+  margin-bottom: 20px;
+  font-size: 3vw;
+}
+
+.newsletter form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsletter input[type="email"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+  width: 300px;
+}
+
+.newsletter button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.newsletter button:hover {
+  background-color: #0056b3;
+}
+
+/* newsletter end */
+
+/* footer start */
+/* Default styling */
+.shop-footer {
+  background-color: #c9fe73;
+  color: black;
+  padding: 50px 0;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  width: 25%;
+  min-width: 200px;
+  margin-bottom: 20px;
+}
+
+.footer-section h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.footer-section p {
+  font-size: 1em;
+  margin: 5px 0;
+  text-decoration: none;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  text-decoration: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+.footer-section ul li a {
+  color: black;
+  text-decoration: none;
+}
+.footer-logo img {
+  width: 50px;
+  height: auto;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.footer-bottom {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 0.8em;
+}
+
+/* Responsive styling */
+@media screen and (max-width: 640px) {
+  .newsletter h2 {
+    margin-bottom: 20px;
+    font-size: 6vw;
+  }
+  nav {
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  nav li {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  li {
+    margin: 10px 0;
+  }
+  nav {
+    flex-direction: column;
+    width: 100%;
+    background-color: #8bd037;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  .btn {
+    margin-bottom: 20px;
+  }
+  .left-section h2 {
+    font-weight: bold;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: black;
+  }
+  span {
+    color: greenyellow;
+  }
+
+  .left-section p {
+    margin-bottom: 20px;
+  }
+  .right-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .right-section img {
+    width: 130px;
+    height: auto;
+    display: flex;
+    align-items: center;
+  }
+  .right-section2 img {
+    width: 200px;
+    height: auto;
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .footer-bottom p {
+    font-size: 0.7em;
+  }
+}
+
+/* footer end */
+
+@media screen and (max-width: 768px) {
+  .container2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left-section,
+  .right-section {
+    width: 100%;
+  }
+
+  .right-section {
+    order: -1;
+  }
+}

@@ -8,23 +8,25 @@ let menuToggle = document.querySelector(".menu-toggle");
 let MenuToggleIcon = document.querySelector(".menu-toggle-icon");
 
 // dashboard
-function onSignIn(googleUser) {
-  var profile = googleUser.getBasicProfile();
-  $("#name").text(profile.getName());
-  $("#image").attr("src", profile.getImageUrl());
-  $(".g-signal2").css("display", "none");
-  $(".data").css("display", "block");
+// function onSignIn(googleUser) {
+//   var profile = googleUser.getBasicProfile();
+//   $("#name").text(profile.getName());
+//   $("#image").attr("src", profile.getImageUrl());
+//   $(".g-signal2").css("display", "none");
+//   $(".data").css("display", "block");
+//   document.getElementById("data").style.display = "block";
+// }
+function loggedin() {
+  document.getElementById("login-form").style.display = "none";
   document.getElementById("data").style.display = "block";
 }
-
-function signOut() {
-  var auth2 = gapi.auth2.getAuthInstance();
-  auth2.signOut().then(function () {});
-  alert("you have been successfully signed out");
-  $(".g-signal2").css("display", "block");
-  $(".data").css("display", "none");
-  document.getElementById("data").style.display = "none";
-}
+// function signOut() {
+//   var auth2 = gapi.auth2.getAuthInstance();
+//   auth2.signOut().then(function () {});
+//   alert("you have been successfully signed out");
+//   $(".g-signal2").css("display", "block");
+//   $(".data").css("display", "none");
+// }
 
 // Nav Toggler
 navItems.forEach((el) => {

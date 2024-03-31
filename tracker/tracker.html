@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tracker.css">
+    <title>Shop</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <!-- Logo on the left corner -->
+            <div class="logo">
+                <a href="#"><img src="/pictures/logo.png" alt="Logo"></a>
+            </div>
+            <!-- Header links in the middle -->
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="/landing-page/Waste.html">Home</a></li>
+                    <li><a href="/shop-landing/shop.html">Shop</a></li>
+                </ul>
+            </nav>
+            <!-- Image on the right corner for profile pic -->
+            <div class="profile">
+                <img id="profile-pic" src="/pictures/profile.jpg" alt="Profile Pic">
+            </div>
+        </div>
+    </header>
+
+
+
+
+
+    <div class="container2">
+        <section class="left-section">
+            <h2>Download our <span>App</h2>
+            <p>Discover eco-friendly treasures at UNWASTE! Shop now for unique upcycled items and join the movement
+                towards a sustainable future.
+            </p>
+            <a href="https://drive.google.com/file/d/1l8MsBbi9s7PZKE1rSVHvaL7AuDCVH0K2/view?usp=sharing" class="btn scale-animation">Download App</a>
+        </section>
+
+        <section class="right-section">
+            <img id="profile-pic" src="/pictures/phone2.png" alt="Image">
+        </section>
+    </div>
+
+
+
+
+    <div class="container2">
+        <section class="right-section2">
+            <img class="first-image" src="/pictures/phone.png" alt="Image">
+        </section>
+
+        <section class="left-section">
+            <h2>Unwaste App</h2>
+            <p>Has the following features :
+            <ol>
+                <li><span>User Authentication</span><br />
+                    Login with username and password
+                    Google sign-in authentication
+                    Profile Management
+                </li>
+                <li>
+
+                    <span> Update profile picture</span><br />
+                    View user details
+                    Modify user information
+                    Dashboard
+                </li>
+                <li>
+                    <span> Artist login</span><br />
+                    Access to various sections based on user role
+                    Navigation to different pages
+                    Main Page
+                </li>
+                <li>
+                    <span>Display relevant information</span><br />
+                    Navigate to specific sections
+                    Profile Page
+                </li>
+                <li>
+                    <span> View user profile details</span><br />
+                    Edit profile information
+                    Upload and manage profile picture
+                    Artwork Management
+                </li>
+                <li>
+                    <span>Upload artwork</span><br />
+                    View existing artwork
+                    Edit or delete artwork
+                    Rules and Guidelines
+                </li>
+                <li>
+                    <span>Access rules and guidelines document</span><br />
+                    Review submission guidelines
+                </li>
+                Logout
+                <li>
+                    <span> Securely log out of the application </span><br />
+                </li>
+            </ol>
+            </p>
+            <a href="https://drive.google.com/file/d/1l8MsBbi9s7PZKE1rSVHvaL7AuDCVH0K2/view?usp=sharing" class="btn scale-animation">Download Now</a>
+        </section>
+
+
+    </div>
+
+
+    <section class="newsletter-container">
+        <section class="newsletter">
+            <div class="container4">
+                <h2>Subscribe to Our Newsletter</h2>
+                <form method="POST">
+                    <input type="email" name="email" placeholder="Enter your email address" required>
+                    <button type="submit" onclick="subscribe();">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </section>
+    <script>
+        function subscribe() {
+            alert("you have subscribed successfully");
+        }
+
+
+
+        window.addEventListener("resize", function () {
+            if (window.innerWidth <= 640) {
+                document
+                    .getElementById("profile-pic")
+                    .addEventListener("click", function () {
+                        var navLinks = document.querySelector(".nav-links");
+                        navLinks.style.display =
+                            navLinks.style.display === "none" ? "block" : "none";
+                    });
+            } else {
+                // Remove the event listener if screen width is greater than 640 pixels
+                document
+                    .getElementById("profile-pic")
+                    .removeEventListener("click", toggleNav);
+            }
+        });
+
+        // Define the toggleNav function outside of the resize event listener
+        function toggleNav() {
+            var navLinks = document.querySelector(".nav-links");
+            navLinks.style.display = navLinks.style.display === "none" ? "block" : "none";
+        }
+
+
+    </script>
+
+
+
+
+
+
+
+
+    <footer class="shop-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="/pictures/logo.png" alt="UNWASTE Logo">
+            </div>
+
+            <div class="footer-section footer-links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="/landing-page/Waste.html">Home</a></li>
+                    <li><a href="/shop/shop.html">Shop</a></li>
+                    <li><a href="/site/progress.html">Artists</a></li>
+                    <li><a href="/shop-landing/shop.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section contact">
+                <h2>Contact Us</h2>
+                <p>Email: unwaste@gmail.com</p>
+                <p>Phone: +8130035736</p>
+            </div>
+
+            <div class="footer-section social">
+                <h2>Follow Us</h2>
+                <div class="social-icons">
+                    <a href="#" target="_blank"><img src="https://img.icons8.com/ios-filled/50/facebook-new.png"
+                            alt="Facebook"></a>
+                    <a href="#" target="_blank"><img src="https://img.icons8.com/ios/50/twitterx--v2.png"
+                            alt="Twitter"></a>
+                    <a href="#" target="_blank"><img src="https://img.icons8.com/ios/50/instagram-new--v3.png"
+                            alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 UNWASTE. All rights reserved. | Designed by Anjali Dass</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
