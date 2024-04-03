@@ -18,6 +18,17 @@ The issues we aim to tackle are:
 6. Product Design and Innovation: Partnering with artists to design eco-friendly products, sustainable packaging solutions, or artistic interventions that promote waste reduction, recycling, and environmental stewardship.
 
 
+## Why bio-epoxy resin?
+
+Normal Epoxy  | Bio-Epoxy | 
+ ------------ | :-----------: | 
+Derived from petroleum-based chemicals. |   Derived from renewable biomass sources.  | 
+Higher environmental impact due to fossil fuel reliance. |  Lower environmental impact and reduced emissions.   | 
+Limited availability of renewable resources.|  Relies on renewable resources, reducing resource depletion. | 
+Versatile for various applications.|  Emerging use in sustainable products and green technologies. | 
+
+
+
 ### Deployed website:
 
 https://unwaste-official.netlify.app/
